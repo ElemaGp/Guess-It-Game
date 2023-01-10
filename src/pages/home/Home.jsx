@@ -62,16 +62,19 @@ const Home = () => {
    
   return (
     <div className="homeContainer">
-      <input type="number" ref={guessRef} />
-      <button onClick={handlePlay}> PLAY </button>
+      <div className="homeWrapper">
+        <input type="number" ref={guessRef} />
+        <button onClick={handlePlay}> PLAY </button>
 
-      <p>Computer Number: {compNum}</p>
-      <p>Your Number: {guess}</p>
-      <p>Message: {message}</p>
-      <br />
-      <p>Computer Score: {computerScore}</p>
-      <p>Player Score: {playerScore}</p>
-      
+      <div className="playNumbers">
+        <p>Computer Number: {compNum}</p>
+        <p>Your Number: {guess}</p>
+      </div>
+        <p>Message: {message}</p>
+        <br />
+        <p>Computer Score: {computerScore}</p>
+        <p>Player Score: {playerScore}</p>
+      </div>
     </div>
   )
 }
