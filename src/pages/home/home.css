@@ -1,0 +1,23 @@
+.homeContainer{
+    display: flex;
+    height: 95vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.homeWrapper{
+    border: solid 1px red;
+    text-align: center;
+}
+
+.playNumbers{
+    display: flex;
+    border: solid;
+    width: 50vw;
+    justify-content: space-between;
+    margin: 1.5rem;
+    color: rgb(38, 38, 221);
+    font-size: x-large;
+    font-weight: 600;
+}
+
