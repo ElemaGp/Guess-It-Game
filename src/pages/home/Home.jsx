@@ -5,8 +5,8 @@ const Home = () => {
   const [compNum, setCompNum] = useState("");
   const [guess, setGuess] = useState("");
   const [message, setMessage] = useState("");
-  const [playerScore, setPlayerScore] = useState(JSON.parse(localStorage.getItem("playerScore")) || null);
-  const [computerScore, setComputerScore] = useState(JSON.parse(localStorage.getItem("computerScore")) || null);
+  const [playerScore, setPlayerScore] = useState(JSON.parse(localStorage.getItem("playerScore")) || 0);
+  const [computerScore, setComputerScore] = useState(JSON.parse(localStorage.getItem("computerScore")) || 0);
   const [initialRender, setInitialRender] = useState(true);
   const [buttonClicked, setButtonClicked] = useState(false);
 
