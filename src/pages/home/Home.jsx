@@ -70,7 +70,7 @@ const Home = () => {
         <p>Computer Number: {compNum}</p>
         <p>Your Number: {guess}</p>
       </div>
-        <p>Message: {message}</p>
+        <p className="message">Message: {message}</p>
         <br />
         <p>Computer Score: {computerScore}</p>
         <p>Player Score: {playerScore}</p>
