@@ -10,6 +10,26 @@
     text-align: center;
 }
 
+.playInputField{
+    height: 2rem;
+    width: 1rem;
+    font-size: 1.5rem;
+    border-color: blue;
+    outline: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 .playNumbers{
     display: flex;
     border: solid;
@@ -25,4 +45,14 @@
     color: rgb(59, 185, 59);
     font-size: x-large;
     font-weight: 600;
+}
+
+.wonStyle {
+    display: inline; 
+    color: green;
+}
+
+.lostStyle {
+    display: inline; 
+    color: red;
 }
