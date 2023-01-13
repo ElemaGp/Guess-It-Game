@@ -46,3 +46,13 @@ input[type=number] {
     font-size: x-large;
     font-weight: 600;
 }
+
+.wonStyle {
+    display: inline; 
+    color: green;
+}
+
+.lostStyle {
+    display: inline; 
+    color: red;
+}

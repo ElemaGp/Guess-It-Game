@@ -9,6 +9,8 @@ const Home = () => {
   const [computerScore, setComputerScore] = useState(JSON.parse(localStorage.getItem("computerScore")) || 0);
   const [initialRender, setInitialRender] = useState(true);
   const [buttonClicked, setButtonClicked] = useState(false);
+  const [won, setWon] = useState(false);
+  const [lost, setLost] = useState(false);
 
   
   const guessRef = useRef();
@@ -20,9 +22,13 @@ const Home = () => {
       setInitialRender(false); //prevents the useEffect from runnung on initial render
     }else{
       if (Number(guess) === compNum){
+        setLost(false);
+        setWon(true);
         setMessage("You win")
         setPlayerScore(playerScore + 1)
       }else{
+        setWon(false);
+        setLost(true);
         setMessage("You lose")
         setComputerScore(computerScore + 1)
       }
@@ -52,7 +58,7 @@ const Home = () => {
 
     setCompNum(randNum());
 
-    setButtonClicked(!buttonClicked); //this is added as a dependency in the useEffect so that the useEffect fires everytime the it changes (the button is clicked), even if the computer number and user number don't change.
+    setButtonClicked(!buttonClicked); //this is added as a dependency in the useEffect so that the useEffect fires everytime it changes (the button is clicked), even if the computer number and user number don't change.
 
   }
 
@@ -70,7 +76,7 @@ const Home = () => {
         <p>Computer Number: {compNum}</p>
         <p>Your Number: {guess}</p>
       </div>
-        <p className="message">Message: {message}</p>
+        <p className="message">Message: <p className={won ? "wonStyle" : "lostStyle"}>{message}</p></p>
         <br />
         <p>Computer Score: {computerScore}</p>
         <p>Player Score: {playerScore}</p>
