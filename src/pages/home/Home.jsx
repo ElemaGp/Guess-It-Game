@@ -63,7 +63,7 @@ const Home = () => {
   return (
     <div className="homeContainer">
       <div className="homeWrapper">
-        <input type="number" ref={guessRef} />
+        <input type="number" ref={guessRef}  className="playInputField"/>
         <button onClick={handlePlay}> PLAY </button>
 
       <div className="playNumbers">

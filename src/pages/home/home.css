@@ -10,6 +10,14 @@
     text-align: center;
 }
 
+.playInputField{
+    height: 2rem;
+    width: 1rem;
+    font-size: 1.5rem;
+    border-color: blue;
+    outline: none;
+}
+
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
