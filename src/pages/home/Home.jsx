@@ -78,8 +78,8 @@ const Home = () => {
       </div>
         <p className="message">Message: <p className={won ? "wonStyle" : "lostStyle"}>{message}</p></p>
         <br />
-        <p>Computer Score: {computerScore}</p>
-        <p>Player Score: {playerScore}</p>
+        <p className="score">Computer Score: {computerScore}</p>
+        <p className="score">Player Score: {playerScore}</p>
       </div>
     </div>
   )
