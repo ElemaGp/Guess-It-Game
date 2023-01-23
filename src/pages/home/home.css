@@ -10,12 +10,26 @@
     text-align: center;
 }
 
+.inputAndBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .playInputField{
     height: 2rem;
     width: 1rem;
     font-size: 1.5rem;
     border-color: blue;
     outline: none;
+}
+
+.playBtn{
+    border: none;
+    padding: 0.7rem;
+    background-color: teal;
+    color: #ffff;
+    cursor: pointer;
 }
 
 /* Chrome, Safari, Edge, Opera */
