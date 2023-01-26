@@ -9,6 +9,7 @@
     border: solid 4px red;
     padding: 4rem;
     text-align: center;
+    border-radius: 4px;
 }
 
 .inputAndBtn{
