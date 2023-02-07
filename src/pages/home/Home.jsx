@@ -78,7 +78,7 @@ const Home = () => {
         <p>Computer Number: {compNum}</p>
         <p>Your Number: {guess}</p>
       </div>
-        <p className="message">Message: <p className={won ? "wonStyle" : "lostStyle"}>{message}</p></p>
+        <div className="message">Message: <p className={won ? "wonStyle" : "lostStyle"}>{message}</p></div>
         <br />
         <p className="score">Computer Score: {computerScore}</p>
         <p className="score">Player Score: {playerScore}</p>
